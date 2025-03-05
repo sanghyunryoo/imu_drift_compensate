@@ -1,0 +1,29 @@
+<?xml version="1.0"?>
+<?xml-model href="http://download.ros.org/schema/package_format3.xsd" schematypens="http://www.w3.org/2001/XMLSchema"?>
+
+<package format="3">
+  <name>slam_tf_broadcaster</name>
+  <version>0.0.0</version>
+  <description>Broadcasts dynamic TF between base_footprint and base_link using odometry</description>
+  <maintainer email="sanghyunryoo@postech.ac.kr">root</maintainer>
+  <license>Apache-2.0</license>
+
+  <buildtool_depend>ament_cmake</buildtool_depend>
+
+  <depend>rclcpp</depend>
+  <depend>tf2_ros</depend>
+  <depend>sensor_msgs</depend>
+  <depend>pcl_conversions</depend>
+  
+  <test_depend>ament_lint_auto</test_depend>
+  <test_depend>ament_lint_common</test_depend>
+
+  <export>
+    <build_type>ament_cmake</build_type>
+    <launch>
+      <launch_file>slam_tf_broadcaster.launch.py</launch_file>
+    </launch>    
+  </export>
+
+
+</package>
